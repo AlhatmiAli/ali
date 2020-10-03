@@ -4534,10 +4534,10 @@ date-fns@^2.14.0, date-fns@^2.8.1:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.14.0.tgz#359a87a265bb34ef2e38f93ecf63ac453f9bc7ba"
   integrity sha512-1zD+68jhFgDIM0rF05rcwYO8cExdNqxjq4xP1QKM60Q45mnO6zaMWB4tOzrIr4M4GSLntsKeE4c9Bdl2jhL/yw==
 
-datocms-client@>=3.0.32:
-  version "3.0.33"
-  resolved "https://registry.yarnpkg.com/datocms-client/-/datocms-client-3.0.33.tgz#4047776b12477f2a17ef57df1e78a25c24bb08d2"
-  integrity sha512-WcC0IxDtuR/W889zvc3VAqlFuFLQ2xKfcf5nH8/IturyMVkGDsQem91gjs+PNOFE14BXvZAsd1kv6ckR3XoFxw==
+datocms-client@>=3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/datocms-client/-/datocms-client-3.1.1.tgz#eb54a5fa26662cbb17bf390d1d831a4b97baaa62"
+  integrity sha512-6i4ZK/TjcYvoRLZfNz46aNc4EoINe619f7TsrcD6OgHCH2YvWv2Yu1Z4V1dXPHVnssvGn9Kgm+F8Zs3vsemdJA==
   dependencies:
     "@iarna/toml" "^2.2.3"
     arr-diff "^4.0.0"
@@ -4566,6 +4566,7 @@ datocms-client@>=3.0.32:
     ora "4.0.3"
     pluralize "^8.0.0"
     pretty-error "^2.1.1"
+    promise-limit "^2.7.0"
     proxy-polyfill "^0.3.0"
     pusher-js "^5.0.3"
     qs "^6.9.1"
@@ -4573,6 +4574,7 @@ datocms-client@>=3.0.32:
     request "^2.88.0"
     rimraf "^3.0.0"
     speakingurl "^14.0.1"
+    terser-webpack-plugin "^1.4.2"
     tmp "^0.1.0"
     traverse "^0.6.6"
     truncate "^2.1.0"
@@ -6519,16 +6521,16 @@ gatsby-recipes@^0.1.39:
     ws "^7.3.0"
     xstate "^4.10.0"
 
-gatsby-source-datocms@^2.2.4:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.2.5.tgz#f69d3615bf79fced8ddf407b713fb44d40c1b9c2"
-  integrity sha512-Zo0CksNlGuej/GG6vg5McSHn6xiGOf1DOiWmUcQYdIyqhWmRmTGNuMDuTNKrMt6itKqujY8vfZt+D4y+D0QZ5w==
+gatsby-source-datocms@^2.4.0:
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.5.4.tgz#ba9c0de1a510757ff120f19a99459ce205e30e89"
+  integrity sha512-7zDTmj8DwreUF8HoVOaOs1QAx5isQjpCUmTVZ4VYNMxBSCZ1Jzqlk2+ECmueTMI33WhpeaSe7Tc32EJoOdvucQ==
   dependencies:
     core-js "^3.2.1"
-    datocms-client ">=3.0.32"
+    datocms-client ">=3.1.0"
     fs-extra ">=8.1.0"
     humps ">=2.0.1"
-    imgix-url-params "11.2.0"
+    imgix-url-params ">=11.2.0"
     json-stringify-safe ">=5.0.1"
     md5 "2.2.1"
     object-assign "^4.1.1"
@@ -7739,10 +7741,10 @@ imagesloaded@^4.0.0:
   dependencies:
     ev-emitter "^1.0.0"
 
-imgix-url-params@11.2.0:
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/imgix-url-params/-/imgix-url-params-11.2.0.tgz#77dace7df4980067b35b49da5c5db68bec2d9112"
-  integrity sha512-KSSnTUFMOlbgUr4S2jKhiDGfsmtH18MCV27OhbhQhB2obUM/XXrdx8B6ZyG5t/xaJKJHD/nB8cCLqNYm3ypDrg==
+imgix-url-params@>=11.2.0:
+  version "11.9.1"
+  resolved "https://registry.yarnpkg.com/imgix-url-params/-/imgix-url-params-11.9.1.tgz#b8ac85fd666aa72a1d0a985336407612d4504d59"
+  integrity sha512-qWrqFegX9hQmQ+mhoxbg8cBQRrvskdYS5KXiAv/n1m775giZPqsZhIx+qWkdGkKAMG3We+pafcP+VRqEJVgX9Q==
 
 immutable@~3.7.6:
   version "3.7.6"
@@ -11082,6 +11084,11 @@ promise-inflight@^1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
+promise-limit@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/promise-limit/-/promise-limit-2.7.0.tgz#eb5737c33342a030eaeaecea9b3d3a93cb592b26"
+  integrity sha512-7nJ6v5lnJsXwGprnGXga4wx6d1POjvi5Qmf1ivTRxTjH4Z/9Czja/UCMLVmB9N93GeWOU93XaFaEt6jbuoagNw==
+
 promise-queue@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/promise-queue/-/promise-queue-2.2.5.tgz#2f6f5f7c0f6d08109e967659c79b88a9ed5e93b4"
@@ -12421,6 +12428,13 @@ serialize-javascript@^3.1.0:
   dependencies:
     randombytes "^2.1.0"
 
+serialize-javascript@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-4.0.0.tgz#b525e1238489a5ecfc42afacc3fe99e666f4b1aa"
+  integrity sha512-GaNA54380uFefWghODBWEGisLZFj00nS5ACs6yHa9nLqlLpVLO8ChDGeKRjZnV4Nh4n0Qi7nhYZD/9fCPzEqkw==
+  dependencies:
+    randombytes "^2.1.0"
+
 serve-index@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/serve-index/-/serve-index-1.9.1.tgz#d3768d69b1e7d82e5ce050fff5b453bea12a9239"
@@ -13445,6 +13459,21 @@ terminal-link@^2.1.1:
   dependencies:
     ansi-escapes "^4.2.1"
     supports-hyperlinks "^2.0.0"
+
+terser-webpack-plugin@^1.4.2:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-1.4.5.tgz#a217aefaea330e734ffacb6120ec1fa312d6040b"
+  integrity sha512-04Rfe496lN8EYruwi6oPQkG0vo8C+HT49X687FZnpPF0qMAIHONI6HEXYPKDOE8e5HjXTyKfqRd/agHtH0kOtw==
+  dependencies:
+    cacache "^12.0.2"
+    find-cache-dir "^2.1.0"
+    is-wsl "^1.1.0"
+    schema-utils "^1.0.0"
+    serialize-javascript "^4.0.0"
+    source-map "^0.6.1"
+    terser "^4.1.2"
+    webpack-sources "^1.4.0"
+    worker-farm "^1.7.0"
 
 terser-webpack-plugin@^1.4.3:
   version "1.4.4"
